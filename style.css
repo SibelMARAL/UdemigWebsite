@@ -1,0 +1,225 @@
+:root {
+--maincolor:#669CF4;
+--background:#35424A;
+--white: #F4F4F4; 
+}
+
+
+/* html ve body etiketlerinin temel düzenlemeleri */ 
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0; 
+}
+
+/* Body etiketine ortak stillendirme */ 
+
+body {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden; 
+    flex: 1;
+}
+/* #header-container {
+    display: flex;
+    align-items: center;
+} */
+
+ul{
+    margin: 0;
+    padding:0;
+}
+
+header{
+    background-color:var(--background);
+    color:rgb(255, 255, 255);
+    min-height: 70px;
+    padding-top: 30px;
+    border-bottom: var(--maincolor) 3px solid;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;   
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px;
+}
+
+
+header #branding h1 {
+    margin: 0;
+
+}
+
+header nav {
+    float: right;    
+}
+
+header .highlight,
+header .current a {
+    color: var(--maincolor);
+    font-weight: bold;
+}
+
+/* showcase */ 
+
+#showcase {
+background: url(img/showcase.jpg) no-repeat 0 -400px;
+min-height: 400px;
+text-align: center;
+color: #fff;
+}
+
+#showcase h1 {
+    font-size: 55px;
+    margin-top: 100px;
+    margin-bottom: 10px;   
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+/* newslwtter */
+
+#newsletter {
+    background: var(--background);
+    color: #fff;
+    padding: 15px;
+}
+
+#newsletter h1 {
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+#newsletter input {
+    height: 25px;
+    width: 250px;
+    padding: 4px;
+}
+
+.button_1 {
+    height: 38px;
+    background: var(--maincolor);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0 20px;
+}
+
+/* BOXS */
+
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+boxes .box img {
+    width: 90px;
+}
+
+
+/*Services */
+
+ul#services li {
+    background-color: #e6e6e6;
+    border: #ccc solid 1px; 
+    list-style: none;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.quote div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.quote div input {
+    padding: 5px;
+}
+
+/* Footer */
+
+footer {
+    background: var(--maincolor);
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    margin-top: auto;
+}
+
+
+/* dark sınıfının stili */
+
+.dark {
+    background: var(--background);
+    padding: 15px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 15px;
+    
+}
+
+#main-col{
+    float: left;
+    width: 60%;
+}
+
+
+/* media quries */ 
+
+@media (max-width:768px) {
+    article#main-col,aside#sidebar, nav, #branding, #boxes .box {
+        float: none;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+#header-container {
+    flex-direction: column;
+}
+
